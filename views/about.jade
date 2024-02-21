@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title About Page
+    link(href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css", rel="stylesheet")
+  body
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light
+      a.navbar-brand(href="#") Your Full Name - About
+      button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarNav", aria-controls="navbarNav", aria-expanded="false", aria-label="Toggle navigation")
+        span.navbar-toggler-icon
+      #navbarNav.collapse.navbar-collapse
+        ul.navbar-nav
+          li.nav-item
+            a.nav-link(href="/") Home
+          li.nav-item
+            a.nav-link(href="/student") Student
+          li.nav-item
+            a.nav-link(href="/about") About
+          li.nav-item
+            a.nav-link(href="/contact") Contact
+    .container.mt-5
+      block content
+    footer.footer.mt-auto.py-3.bg-light
+      .container
+        span.text-muted Your Student Name and Number - About
